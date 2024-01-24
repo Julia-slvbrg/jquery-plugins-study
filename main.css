@@ -12,12 +12,19 @@ html{
     width: 100%;
     margin: 0 auto;
 }
-header{
+header, footer{
     background-color: #192a56;
     padding-top: 16px ;
     color: #fff;
 }
-header > .container{
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+header > .container,
+footer > .container{
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -74,13 +81,16 @@ section h2{
 .vehicle-list li img{
     max-width: 100%;
 }
+.vehicle-list li p{
+    height: 30px;
+}
 .vehicle-list li h3{
     margin: 16px 0;
 }
 .central-item{
     margin: 0 5%;
 }
-.vehicle-list li button{
+button{
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -100,4 +110,34 @@ section h2{
 .price del{
     color: #ccc;
     font-size: 14px;
+}
+.form-field{
+    margin-bottom: 16px;
+}
+.form-field label{
+    font-weight: bold;
+    display: block;
+}
+.form-field input,
+.form-field textarea{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+.form-field textarea{
+    resize: none;
+    height: 120px;
+}
+form{
+    max-width: 360px;
+}
+form button{
+    max-width: 120px;
+}
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+footer li img{
+    height: 32px;
 }
