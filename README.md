@@ -26,7 +26,10 @@ This application demonstrates the use of jQuery plugins to dynamically display i
 ![Contact form](./images/contact.png)
 
 ## Demonstration
-[Link (deploy)]()
+[Link (deploy)](https://jquery-plugins-study.vercel.app/)
+
+https://github.com/Julia-slvbrg/jquery-plugins-study/assets/114543081/e1afd2a6-ca50-4b39-b553-f4e1eed79f4a
+
 
 
 ## How to run the application
