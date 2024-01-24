@@ -2,9 +2,20 @@ $(document).ready(function(){
     $('#image-carousel').slick({
         autoplay: true,
     });
-    $('.hamburger-menu').click(function(){
-        $('nav').slideToggle();
+
+    $(document).on('click', function(event){
+        if(!$(event.target).closest('.hamburger-menu').length && !$(event.target).closest('nav').length){
+            if($('nav').is(':visible')){
+                $('nav').slideUp();
+            }
+        }
     });
+    
+    $('.hamburger-menu').on('click', function(event){
+        event.stopPropagation();
+        $('nav').slideToggle();
+    }); 
+   
     $('#tel').mask('(00) 00000-0000', {
         placeholder: '(DDD) XXXXX-XXXX'
     });
