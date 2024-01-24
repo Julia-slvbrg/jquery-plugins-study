@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    overflow-x: hidden;
+}
 .container{
     max-width: 1024px;
     width: 100%;
@@ -15,7 +18,6 @@ header{
     color: #fff;
 }
 header > .container{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -23,6 +25,7 @@ header > .container{
 nav{
     background-color: #575fcf;
     padding: 16px 0;
+    display: none;
 }
 nav li{
     list-style: none;
@@ -38,6 +41,7 @@ nav li a{
 }
 .hamburger-menu{
     width: 32px;
+    cursor: pointer;
 }
 .hamburger-menu span{
     height: 2px;
@@ -45,4 +49,55 @@ nav li a{
     background-color: #fff;
     display: block;
     margin-bottom: 4px;
+}
+.container-flex{
+    display: flex;
+}
+#about-the-store img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+section{
+    padding: 48px 0;
+}
+section h2{
+    margin-bottom: 16px;
+}
+.vehicle-list{
+    flex-wrap: wrap;
+}
+.vehicle-list li{
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+.vehicle-list li img{
+    max-width: 100%;
+}
+.vehicle-list li h3{
+    margin: 16px 0;
+}
+.central-item{
+    margin: 0 5%;
+}
+.vehicle-list li button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.price{
+    margin: 16px 0;
+    display: block;
+}
+.price del{
+    color: #ccc;
+    font-size: 14px;
 }
